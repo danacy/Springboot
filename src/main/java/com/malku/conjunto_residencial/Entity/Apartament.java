@@ -1,16 +1,25 @@
 package com.malku.conjunto_residencial.Entity;
 
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.Data;
+
+@Entity
+@Data
 public class Apartament {
+    @Id
+
+    private Long id;
+    private String number;
+    private int floor;
+    private String tower;
+    private double area;
+    private String status;
+
+
 }
-
 /*
-* 1️⃣ Apartment (Apartamento)
-
-id (Long) – Identificador único.
-
-number (String) – Ej: “301A”.
-
-floor (int)
 
 tower (String)
 
